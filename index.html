@@ -113,57 +113,41 @@
 
 
 <!-- Teaser video-->
-<!-- Teaser video-->
-<section class="hero teaser">
+<!-- Teaser videos side-by-side -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      
-      <!-- 视频标题 -->
-      <h2 class="title is-3">PEM Electrolyzer Disassembly</h2>
+    <div class="columns is-variable is-6 is-multiline">
 
-      <!-- 视频 -->
-      <video id="tree" autoplay controls muted loop style="width:100%; height:auto;" poster="">
-        <source src="static/videos/PEM电解槽拆卸.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
-<!-- PEM Electrolyzer Assembly video -->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body has-text-centered">
-      <!-- 视频标题 -->
-      <h2 class="title is-3">PEM Electrolyzer Assembly（PEM电解槽组装）</h2>
-      <!-- 视频 -->
-      <video id="pem-assembly" autoplay controls muted loop playsinline
-             style="width:100%; height:auto;" poster="">
-        <!-- 按你的实际文件名与路径修改 -->
-        <source src="static/videos/PEM电解槽组装.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+      <!-- 左侧：拆卸 -->
+      <div class="column is-12-mobile is-6-tablet is-6-desktop">
+        <div class="has-text-centered">
+          <h2 class="title is-4">PEM Electrolyzer Disassembly</h2>
+          <video id="pem-disassembly"
+                 autoplay controls muted loop playsinline preload="metadata"
+                 style="width:100%; height:auto;" poster="">
+            <source src="static/videos/PEM电解槽拆卸.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
+
+      <!-- 右侧：组装 -->
+      <div class="column is-12-mobile is-6-tablet is-6-desktop">
+        <div class="has-text-centered">
+          <h2 class="title is-4">PEM Electrolyzer Assembly</h2>
+          <video id="pem-assembly"
+                 autoplay controls muted loop playsinline preload="metadata"
+                 style="width:100%; height:auto;" poster="">
+            <source src="static/videos/PEM电解槽组装.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
-
+<!-- End side-by-side videos -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
